@@ -79,3 +79,39 @@ let dicegame = {
     }
 };
 dicegame.init();
+
+// for loop
+/*
+for(let i = 0; i<100; i++){
+
+    if( 1 < 2 ){
+        console.log("Mep")
+    }
+
+
+    document.write(`<p> ${i} </p> `)
+}
+*/
+//DOM
+document.querySelector('h1').innerText = 'Hello Linea!';
+document.querySelector('h2').style.background = 'red';
+
+let list = document.querySelectorAll('li');
+
+console.log(list)
+for(let i = 0; i<list.length; i++){
+    console.log(list[i]);
+    list[i].innerText = 'Jahaja!';
+}
+/*
+list.forEach(el => {
+
+    el.addEventlistener('click', () => {
+        console.log('Du klickade på' + el.innerText);
+        el.classList.add('clicked')
+    })
+})
+*/
+let template = '<p>hejsan hoppasn! jag är en templet string!</p>'
+
+document.querySelector('body').insertAdjacentHTML('afterbegin', template)
